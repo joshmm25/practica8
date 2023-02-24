@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http‐equiv="refresh" content="20;URL=./2PantillaBasica.htm" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divisones Sem&aacute;ticas</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+  <link rel="stylesheet" type="text/css" href="css/estiloBasico.css">
+  <style>
+   article{
+margin: 0px;
+padding: 0px;
+}
+h1 {
+font: bold 20px verdana, sans-serif;
+} h2 {
+font: bold 14px verdana, sans-serif;
+}
+
+/*para asegurarnos de que serán tratados como regularmente
+se hace con elementos <div> y de este modo construir
+el modelo de caja*/
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+display: block;
+}
+/*Centrando el cuerpo*/
+body {
+text-align: center;
+/*background-image: url("paper.gif");*/
+/*background-color: lightblue;*/
+}
+/*Definiendo las propiedades de la caja principal*/
+#agrupar {
+width: 960px;
+margin: 15px auto;
+text-align: left;
+}
+/* Agregando estilos para <header>.*/
+#cabecera {
+background: #FFFBB9;
+border: 1px solid #999999;
+padding: 20px;
+
+}
+/*Agregando estilos para <nav>.*/
+#menu {
+background: #CCCCCC;
+padding: 5px 15px;
+}
+#menu li {
+display: inline-block;
+list-style: none; /*list-style: square inside url("sqpurple.gif");*/
+padding: 5px;
+font: bold 14px verdana, sans-serif;
+}
+/*Section y aside*/
+/*La propiedad flotante especifica cómo debe flotar un elemento.
+Nota: ¡Los elementos absolutamente posicionados ignoran
+la propiedad de flotación!
+Nota: los elementos después de un elemento flotante fluirán a su alrededor.
+Para evitar esto, use la propiedad clear o el clearfix hack
+*/
+#seccion {
+float: right;
+width: 660px;
+margin: 20px;
+}
+
+#columna {
+float: left;
+width: 220px;
+height: 1700px;
+margin: 20px 0px;
+padding: 20px;
+background: #CCCCCC;
+}
+/*Footer*/
+#pie {
+clear: both;/* No permita elementos flotantes en el lado izquierdo
+                o derecho de un elemento <p> especificado:*/
+text-align: center;
+padding: 20px;
+border-top: 2px solid #999999;
+}
+/*imagenes*/
+#imagen{
+  width: 20%;
+  height: 20%;
+}
+
+#imagen2{
+  width: 15%;
+  height: 10%;
+}
+
+/*Agregando los últimos toques a nuestro diseño básico.*/
+article {
+background: #FFFBCC;
+border: 1px solid #999999;
+padding: 20px;
+margin-bottom: 15px;
+}
+
+article footer {
+text-align: right;
+}
+
+img{
+  width: 30%;
+  height: 35%;
+}
+
+time {
+color: #999999;
+}
+
+figcaption {
+font: italic 14px verdana, sans-serif;
+}
+  </style>
+</head>
+<body>
+  <div id="agrupar">
+
+  <header id="cabecera">
+      <h1 style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Practica 8</h1>
+  </header>
+
+  <nav id="menu">
+    <ul>
+    <li><a href="https://joshmm25.github.io/primerpractica/">Practica 1</a></li>
+    <li><a href="https://joshmm25.github.io/lineadeltiempo/">Practica 2</a></li>
+    <li><a href="https://joshmm25.github.io/practica3/">Practica 3</a></li>
+    <li><a href="https://joshmm25.github.io/practica_4/">Practica 4</a></li>
+
+    </ul>
+  </nav>
+
+  <section id="seccion">
+      <article><!--Primer articulo-->
+        <header>
+              <hgroup>
+                <h1
+                style="color: black; font-family: cursive; font-size: 40px; text-align: center;"
+                >MI CV</h1>
+                <h2>video</h2>
+                <video src="video/video.mp4" controls width="320px" height="240px">
+                 
+               </video> 
+                <h2 style=" font-family:  Arial,Helvetica, sans-serif;">Dirreci&oacute;n</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d659.0413951611698!2d-97.10859904237145!3d18.87337661489053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1676946174653!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <br><br>
+                <form style= "background-color: white">
+             <fieldset  >
+         <legend style= "color: black">Datos </legend>
+         
+         <form action="" method="get">               
+         <h2>Datos personales</h2>
+         <p>
+             <ul style="list-style-type:square">
+                 <li>Nombre completo: Martinez Molina Jorge Eduardo</li>
+                 <li>Fecha de nacimiento: 25/05/2001</li>
+                 <li>Lugar de nacimiento: Orizaba, Veracruz</li>
+                 </ul><br></p>
+         
+         <h2>Formaci&oacute;n acad&eacute;mica</h2>
+         <p>
+             <ul style="list-style-type:square">
+                 <li>2016-2019 Escuela Secundaria T&eacutecnica 84</li>
+                 <li>2013-2016 Colegio Preparatorio de Orizaba</li>
+                 <li>2020-2025 Instituto Tecnol&oacutegico de Orizaba</li>
+                 </ul>
+         <br></p>
+         
+         <h2>Experiencia laboral</h2> <p>
+             <ul style="list-style-type:square">
+                 <li>2025-2028 Programador de la compañia Google (3 a&ntildeos) </li>
+                 <li>2028-2029 Administrador de desarrollo de software (1 a&ntildeo)</li>
+                 <li>2031-2033 Gerente de proyecto de tecnolog&iacuteas de la informaci&oacuten (2 a&ntildeos)</li>
+                 </ul>
+         
+
+              </hgroup>
+              
+      </article>
+
+      <article><!-- Segundo articulo-->
+        <h1
+        style="color: rgb(218, 42, 150); font-family: cursive; font-size: 40px; text-align: center;"
+        >Mis materias preferidas</h1>   
+        <h2 style="color: rgb(41, 180, 88); font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px;">Materias
+     
+        </h2>
+        <ol>
+         <li style="color: rgb(43, 144, 226);">Fundamentos de programacion</li>
+         <li id="C">Calculo integral</li>
+         <li id="I">Ing de software</li>
+         <li style="color: rgb(99, 124, 73);">Metodos numericos</li>
+         <li style="color: rgb(49, 163, 163);">Algebra lineal </li>
+         </ol>
+       
+          
+    </article> <!-- Fin Segundo articulo-->
+
+</section> <!--Fin de section seccion-->
+
+  <aside id="columna"> <!-- aside -->
+    <figure>
+    <a href="https://www.facebook.com/profile.php?id=100051917944287"> <img src="imgs/fb.png" > </a>
+  </figure>
+       <figure>
+        <a href="https://www.instagram.com/jorg_m.t.z/"> <img src="imgs/ig.webp"> </a>
+       </figure>
+       <figure>
+       <a href="https://mx.linkedin.com/?src=go-pa&trk=sem-ga_campid.19001150288_asid.143806640876_crid.636777052015_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1010199&mcid=7000592715335761922&cid=&gclid=Cj0KCQiAutyfBhCMARIsAMgcRJRA4HQjIwmz8LlNJWNaEOpAleu7hRk7CvqQ0-S8ZnXwJvBGf1VUhucaAtHgEALw_wcB&gclsrc=aw.ds"> <img src="imgs/link2.png"> </a>
+      </figure>
+  </aside> <!-- Fin aside -->
+
+  <footer id="pie">
+      Derechos Reservados &copy; 2010-2011
+      <address>
+          <a href="http://www.itorizaba.edu.mx">ITO</a>
+      </address>
+  </footer>
+
+</div> <!--fin div agrupar-->
+
+</body>
+</html>
